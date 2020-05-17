@@ -8,7 +8,7 @@ namespace Mp3Size_CLI
 	 * Calculates an estimated file size of Mp3 files.
 	 *
 	 * Author: Igor Dimitrijević <igor.dvlpr@gmail.com>, 2020.
-	 * Version: 1.0.0
+	 * Version: 1.0.1
 	 * License: MIT, see LICENSE.txt.
 	 *
 	 * Note: does NOT validate any input, that's up to you. :)
@@ -40,7 +40,17 @@ namespace Mp3Size_CLI
 			}
 
 			Console.WriteLine();
-			Console.WriteLine($"File size: {Mp3Size.GetFileSize(time, bitrate)}KB");
+
+			int fileSize = Mp3Size.GetFileSize(time, bitrate);
+
+			if (fileSize == -1)
+			{
+				Console.WriteLine("Not a valid time format.");
+			}
+			else
+			{
+				Console.WriteLine($"File size: {fileSize}KB");
+			}
 
 			Console.WriteLine();
 			Console.WriteLine("Press 'A' to calculate the size of a new file or any other key to exit...");
