@@ -22,4 +22,4 @@ returns a number, the estimated Mp3 file size or -1 in case of an error
 
 <br>
 
-<p align="center" style="text-align: center; margin: auto;font-style: italic;">If you like this project please consider donating to keep it alive, see <a href="https://github.com/igorskyflyer/.net-core-mp3size/#">this</a> and click on the Sponsor button at the top.</p>
+<p align="center" style="text-align: center; margin: auto;font-style: italic;">If you like this project please consider donating to keep it alive, see <a href="#">this</a> and click on the Sponsor button at the top.</p>
